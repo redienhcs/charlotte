@@ -1,0 +1,100 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}:focus{outline:0;}ins{text-decoration:none;}del{text-decoration:line-through;}table{border-collapse:collapse;border-spacing:0;}
+
+#tempo h2, #tempo #clock {
+  text-align: center;
+}
+
+#clock {
+  font-size: 30px;
+  color:green;
+}
+
+.redColor {
+  color:red;
+}
+
+h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#div_informacoes, #configuracoes, #tempo{
+    border: 3px solid #003366;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 20px;
+}
+.info_sug{
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.info_total{
+  padding: 10px;
+}
+.info_corretas{
+  color: green;
+}
+.info_erradas{
+  color: red;
+}
+.info_porcentagem{
+  font-size: 12px;
+  margin-top:5px;
+}
+
+#div_perguntas{
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid green;
+  text-align: center;
+}
+#div_perguntas input {
+  border: 1px solid #003366;
+}
+#div_perguntas label{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#pergunta {
+  font-size: 25px;
+  padding-bottom:10px;
+}
+
+.clear{
+  clear: both;
+}
+
+#botaoLimpar{
+  color: blue;
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px;
+  margin-left: 15px;
+}
+
+.redColor{
+  color: red;
+}
+
+.greenColor{
+  color: green;
+}
+
+#content{
+}
+
+#randomData{
+  text-align: center;
+  display: none;
+}
+
+#randomData textarea{
+  width: 500px;
+  height: 200px;
+}
+
+.italic-font {
+    font-style: italic
+}

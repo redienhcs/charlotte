@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Projeto Charlotte</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<div id="content">
+		<h1>Projeto Charlotte</h1>
+		<div id="Tempo">
+			<h2>Tempo</h2>
+			<div id="clock">00:00</div>
+		</div>
+		<div id="configuracoes">
+			<h2>Configurações</h2>
+			<label>Tempo:</label>
+			<input type="text" id="tempoQuestionario" name="tempoQuestionario"  value="5" />
+			<label>Limite inferior:</label>
+			<input type="text" id="limiteInferior" name="limiteInferior"  value="0" />
+			<label>Limite Superior:</label>
+			<input type="text" id="limiteSuperior" name="limiteSuperior"  value="10" />
+			<input type="button" id="btnIniciar" name="btnIniciar" value="Iniciar" onclick="javascript:limparCampos();iniciar()" />
+
+			<div id="tipos_perguntas">
+				<label for="adicao">Adição:</label>
+				<input type="checkbox" name="adicao" id="adicao" checked="checked" /> -
+				<label for="subtracao">Subtração:</label>
+				<input type="checkbox" name="subtracao" id="subtracao" /> -
+				<label for="divisao">Divisão:</label>
+				<input type="checkbox" name="divisao" id="divisao" /> -
+				<label for="multiplicacao">multiplicação:</label>
+				<input type="checkbox" name="multiplicacao" id="multiplicacao" />
+			</div>
+		</div>
+		<div id="div_informacoes">
+			<h2>Informações</h2>
+			<p class="info_corretas">Respostas corretas:<span id="info_nroPerguntasCertas">0</span></p>
+			<p class="info_erradas">Respostas erradas:<span id="info_nroPerguntasErradas">0</span></p>
+			<p class="info_total">Total de perguntas:<span id="info_totalDePerguntas">0</span></p>
+			<p class="info_sug"></p>
+			<p class="info_porcentagem">Porcentagem de acertos: %<span id="info_numeroPorcentagem">0</span></p>
+		</div>
+		<div id="div_perguntas">
+			<p id="pergunta"></p>
+			<form id="contentInput" action="" method="" onsubmit="javascript:enviarResposta(); return false;">
+				<input type="hidden" id="hid_respostasCorretas" name="hid_respostasCorretas" value="0" />
+				<input type="hidden" id="hid_respostasErradas" name="hid_respostasErradas" value="0" />
+				<input type="hidden" id="hid_currentQuestion" name="hid_currentQuestion" value="0" />
+				<input type="hidden" id="hid_totalPerguntas" name="hid_totalPerguntas" value="1" />
+				<input type="text" id="inputResposta" name="inputResposta"  value="" />
+				<input type="button" id="btnEnviar" name="btnEnviar" value="Enviar" onclick="javascript:enviarResposta()" />
+			</form>
+		</div>
+
+	</div>
+	<script type="text/javascript" src="./jquery.js"></script>
+	<script type="text/javascript" src="./script.js"></script>
+	<script type="text/javascript" >
+	//Variável usada para o setInterval
+	var timer = null;
+	resetar();
+
+	</script>
+</body>
+</html>
